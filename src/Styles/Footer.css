@@ -1,0 +1,97 @@
+/* General footer container */
+.footer {
+  padding: 2rem 3rem;
+  background-color: #333; /* Dark background for contrast */
+  color: #fff; /* White text for readability */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+}
+
+/* Footer links section */
+.footer__links,
+.footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__links a,
+.footer__contact a {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+.footer__links a:hover,
+.footer__contact a:hover {
+  color: #007bff; /* Blue color for hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Social media icons section */
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__socials a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects for social media icons */
+.footer__socials a:hover {
+  color: #007bff; /* Blue color for hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Footer bottom text section */
+.footer__bottom {
+  font-size: 0.9rem;
+  color: #ddd; /* Lighter gray for bottom text */
+  margin-top: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 2rem; /* Reduced padding for smaller screens */
+  }
+
+  .footer__links a,
+  .footer__contact a {
+    font-size: 0.9rem; /* Slightly smaller font size for links */
+    margin: 0.5rem;
+  }
+
+  .footer__socials a {
+    font-size: 1.3rem; /* Slightly smaller icons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__links a,
+  .footer__contact a {
+    font-size: 0.85rem; /* Further reduced font size on very small screens */
+  }
+
+  .footer__socials a {
+    font-size: 1.2rem; /* Further adjust social media icon size */
+  }
+
+  .footer__bottom {
+    font-size: 0.8rem; /* Smaller font for bottom text */
+  }
+}

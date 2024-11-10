@@ -1,0 +1,105 @@
+/* General header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fff; /* Clean white background for a fresh look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-bottom: 2px solid #f1f1f1; /* Light border for separation */
+}
+
+/* Logo styling */
+.header__logo a {
+  font-size: 1.8rem;
+  font-weight: 700; /* Bold weight for prominence */
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 1px; /* Slight spacing for elegance */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header__logo a:hover {
+  color: #007bff; /* Blue hover effect for logo */
+}
+
+/* Navigation list styling */
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Increased gap for better spacing */
+  align-items: center;
+}
+
+/* Navigation link styling */
+.header__nav-link {
+  font-size: 1.1rem;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500; /* Medium weight for readability */
+  text-transform: uppercase; /* Uppercase for modern look */
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.header__nav-link:hover {
+  color: #007bff; /* Blue color on hover */
+  transform: translateY(-3px); /* Slight lift effect for interaction */
+}
+
+/* Cart icon and count */
+.header__cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__cart-count {
+  background-color: #ff5b5b; /* Red for cart count to grab attention */
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+.header__cart-count:hover {
+  background-color: #e60000; /* Darker red for hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem; /* Reduced padding for small screens */
+  }
+
+  .header__logo a {
+    font-size: 1.5rem; /* Adjust logo size on mobile */
+  }
+
+  .header__nav-list {
+    display: none; /* Hide navigation links by default on mobile */
+  }
+
+  .header__cart {
+    margin-left: auto; /* Align cart to the right */
+  }
+
+  .header__cart-count {
+    font-size: 1rem; /* Bigger cart count on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo a {
+    font-size: 1.3rem; /* Further reduce logo size for very small screens */
+  }
+
+  .header__cart-count {
+    padding: 0.1rem 0.4rem;
+  }
+}

@@ -1,0 +1,152 @@
+/* App-level styles */
+
+/* Global styling for the App container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;  /* Set the font for the entire app */
+  background-color: #f4f4f4;  /* Set a light background color */
+}
+
+/* Styling for the logo in the header */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 20px; /* Space out from other content */
+}
+
+/* This animation makes the logo spin */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header styling (this can be improved or overridden by component-specific styles) */
+.App-header {
+  background-color: #282c34;  /* Dark background for header */
+  min-height: 100vh;  /* Ensure header spans full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Link styling (can be updated for specific use in header/footer) */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Keyframe animation for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional page-specific global styles */
+
+.welcome-section {
+  background-color: #ffebcd;  /* Light background for welcome section */
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.welcome-section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Featured Cakes Section */
+.featured-cakes {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.featured-cakes h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cake-gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cake-item {
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cake-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cake-item h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.cake-item p {
+  color: #777;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Cart Page Styles */
+.cart-section {
+  padding: 30px 20px;
+  background-color: #fafafa;
+}
+
+.cart-section h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.cart-total button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background-color: #21a1f1;
+}

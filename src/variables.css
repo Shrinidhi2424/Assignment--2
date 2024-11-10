@@ -1,0 +1,85 @@
+/* Define CSS variables for global use */
+
+/* Colors */
+:root {
+    --primary-color: #ff6347; /* Tomato red for primary buttons, highlights */
+    --secondary-color: #61dafb; /* Light blue for links and accents */
+    --background-color: #f4f4f4; /* Light grey background for the app */
+    --header-bg-color: #282c34; /* Dark background for header */
+    --footer-bg-color: #333; /* Dark footer background */
+    --button-bg-color: #61dafb; /* Button background color */
+    --button-hover-bg-color: #21a1f1; /* Button hover color */
+    --text-color: #333; /* Dark color for text */
+    --subtext-color: #777; /* Light grey for less important text */
+    --light-bg-color: #fff; /* White background for sections */
+    --accent-color: #ffebcd; /* Light beige for background accents */
+    --footer-text-color: #fff; /* White color for footer text */
+    --error-color: #e74c3c; /* Red color for error messages */
+    --success-color: #2ecc71; /* Green color for success messages */
+  }
+  
+  /* Font Sizes */
+  :root {
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-large: 1.25rem; /* 20px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-xxl: 2rem; /* 32px */
+  }
+  
+  /* Spacing */
+  :root {
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+  }
+  
+  /* Border Radius */
+  :root {
+    --border-radius: 8px; /* Standard border radius for buttons, images, etc. */
+  }
+  
+  /* Box Shadow */
+  :root {
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for elements */
+  }
+  
+  /* Transition */
+  :root {
+    --transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  /* Breakpoints */
+  :root {
+    --mobile: 480px;
+    --tablet: 768px;
+    --desktop: 1024px;
+  }
+  
+  /* Font Families */
+  :root {
+    --font-primary: 'Arial', sans-serif; /* Primary font */
+    --font-secondary: 'Georgia', serif; /* Secondary font for headings */
+  }
+  
+  /* Media Queries */
+  @media (max-width: var(--mobile)) {
+    :root {
+      --font-size-base: 1rem; /* Adjust font size for small screens */
+    }
+  }
+  
+  @media (min-width: var(--tablet)) {
+    :root {
+      --font-size-base: 1.1rem; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (min-width: var(--desktop)) {
+    :root {
+      --font-size-base: 1.2rem; /* Adjust font size for large screens */
+    }
+  }
+  

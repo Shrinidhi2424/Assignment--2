@@ -1,0 +1,39 @@
+/* CakeDetailsPage.css */
+.cake-details-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .cake-details {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .cake-details img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .cake-info {
+    max-width: 500px;
+  }
+  
+  .cake-info h1 {
+    font-size: 36px;
+  }
+  
+  .cake-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .cake-info button {
+    padding: 10px 20px;
+    background-color: #f26a1d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

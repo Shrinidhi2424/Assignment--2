@@ -1,0 +1,98 @@
+/* About Us Section */
+.about-us-section {
+  text-align: center;
+  padding: 60px 20px; /* More padding for spaciousness */
+  background-color: #f9f9f9; /* Slightly lighter background color for freshness */
+  color: #333; /* Dark text color for better readability */
+}
+
+.about-us-section h1 {
+  font-size: 40px; /* Larger font size for headings */
+  font-weight: 700; /* Bold heading */
+  margin-bottom: 20px;
+  color: #333; /* Dark color for strong visibility */
+  text-transform: uppercase; /* Adds emphasis */
+  letter-spacing: 2px; /* Spacing out the letters for a modern touch */
+}
+
+.about-us-section p {
+  font-size: 18px;
+  color: #555; /* Softer color for text */
+  max-width: 800px;
+  margin: 0 auto 30px; /* Center the paragraph and add bottom margin */
+  line-height: 1.6; /* Improved readability with increased line height */
+}
+
+/* Image Section (Optional: You can add an image to represent your team or company) */
+.about-us-image {
+  width: 100%;
+  max-width: 600px; /* Limiting image width */
+  margin: 30px auto;
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Team Members Section */
+.team-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  width: 250px; /* Fixed width for team member cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.team-member img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensures the image fits the container properly */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-us-section h1 {
+    font-size: 32px; /* Slightly smaller heading on mobile */
+  }
+
+  .about-us-section p {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+
+  .team-section {
+    flex-direction: column; /* Stack team members vertically on smaller screens */
+    gap: 20px; /* Smaller gap between items */
+  }
+
+  .team-member {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add space between team members */
+  }
+}

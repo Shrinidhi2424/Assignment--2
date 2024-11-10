@@ -1,0 +1,89 @@
+/* Categories Section */
+.categories-section {
+  text-align: center;
+  padding: 60px 20px; /* Added more padding for spacious feel */
+  background-color: #f4f4f9; /* Light background color for subtle contrast */
+}
+
+.categories-section h1 {
+  font-size: 40px; /* Larger font size for the header */
+  font-weight: bold;
+  color: #333; /* Darker text for better readability */
+  margin-bottom: 30px; /* Increased margin for spacing */
+  letter-spacing: 1px; /* Slight letter spacing for a clean look */
+}
+
+.categories-section p {
+  font-size: 20px; /* Slightly larger font size for the description */
+  color: #666; /* Lighter grey color for less emphasis */
+  max-width: 700px; /* Limit text width for better readability */
+  margin: 0 auto 40px auto; /* Centering the paragraph and giving margin at bottom */
+  line-height: 1.6; /* Increase line height for better text spacing */
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 30px; /* Spacing between items */
+  margin-top: 30px;
+}
+
+/* Individual Category Item */
+.category-item {
+  background-color: #fff; /* White background for each category item */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures rounded corners work on all elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  cursor: pointer; /* Indicates item is clickable */
+}
+
+.category-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.category-item img {
+  width: 100%;
+  height: 200px; /* Fixed height for image */
+  object-fit: cover; /* Ensures the image covers the box proportionally */
+  border-bottom: 2px solid #ddd; /* Adds a subtle border between image and text */
+}
+
+.category-item h3 {
+  font-size: 22px; /* Larger font for category name */
+  margin-top: 15px;
+  font-weight: 600; /* Slightly bolder for category name */
+  color: #333; /* Dark color for the category name */
+}
+
+.category-item p {
+  font-size: 16px; /* Smaller font for the category description */
+  color: #777; /* Lighter color for less emphasis */
+  margin: 10px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .categories-section {
+    padding: 50px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .categories-section h1 {
+    font-size: 32px; /* Slightly smaller font size for mobile */
+  }
+
+  .categories-section p {
+    font-size: 18px; /* Adjust font size for better readability */
+    margin-bottom: 30px; /* More space below the paragraph */
+  }
+
+  .category-item h3 {
+    font-size: 20px; /* Slightly smaller category name */
+  }
+
+  .category-item p {
+    font-size: 14px; /* Smaller text on mobile */
+  }
+}

@@ -1,0 +1,45 @@
+/* CakeItem.css */
+.cake-item {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cake-item__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .cake-item__details {
+    margin-top: 1rem;
+  }
+  
+  .cake-item__name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .cake-item__price {
+    font-size: 1rem;
+    color: #007bff;
+  }
+  
+  .cake-item__button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cake-item__button:hover {
+    background-color: #0056b3;
+  }
+  

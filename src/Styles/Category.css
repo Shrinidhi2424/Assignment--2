@@ -1,0 +1,62 @@
+/* Category Container */
+.category {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background for clarity */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Indicating that the category is clickable */
+}
+
+.category:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover for depth */
+}
+
+/* Category Image Styling */
+.category__image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Matching rounded corners */
+  object-fit: cover; /* Ensures images cover the box without distortion */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.category__image:hover {
+  transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+/* Category Name Styling */
+.category__name {
+  margin-top: 15px;
+  font-size: 1.4rem; /* Larger font size for visibility */
+  font-weight: bold; /* Make the category name stand out */
+  color: #333; /* Dark text color for readability */
+  letter-spacing: 0.5px; /* Slight spacing between letters for better readability */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .category {
+    margin: 15px; /* Reduced margin on smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .category__name {
+    font-size: 1.1rem; /* Smaller font size on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .category {
+    margin: 10px; /* Even smaller margin on very small screens */
+    padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .category__name {
+    font-size: 1rem; /* Further reduce font size for readability */
+  }
+}
